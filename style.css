@@ -11,6 +11,7 @@ body {
       color: chocolate;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
+      
   }
 
   nav {
@@ -21,13 +22,13 @@ body {
   }
 
   h1 {
-    color: green;
+    color: chocolate;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
 
   h2 {
-    color: green;
+    color: chocolate;
     text-align: center;
   }
 
@@ -38,19 +39,15 @@ body {
   
   
   p {
-    font-family: verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serifana;
     font-size: medium;
   }
 
-  ul {
-      font-family: verdana;
-      font-size: 20px;
+  .list {
+      font-family: Verdana, Geneva, Tahoma, sans-serifdana;
+      font-size: medium;
     }
 
-    table {
-        font-family: verdana;
-        font-size: 20px;
-    }
   footer {
     color: green;
     text-align: center;
