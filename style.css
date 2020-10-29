@@ -1,0 +1,58 @@
+body {
+    background-color: lightblue;
+    background-image: url("FB_IMG_1495047354200.jpg");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+  }
+
+  header {
+      color: chocolate;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+  }
+
+  nav {
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: left;
+  }
+
+  h1 {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  h2 {
+    color: green;
+    text-align: center;
+  }
+
+  h3 {
+    color: black;
+    text-align: left;
+  }
+  
+  
+  p {
+    font-family: verdana;
+    font-size: medium;
+  }
+
+  ul {
+      font-family: verdana;
+      font-size: 20px;
+    }
+
+    table {
+        font-family: verdana;
+        font-size: 20px;
+    }
+  footer {
+    color: green;
+    text-align: center;
+  }
+  
