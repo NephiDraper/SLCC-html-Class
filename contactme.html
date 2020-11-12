@@ -2,16 +2,45 @@
 <html>
     <head>
         <title>Contact Form</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css"> 
     </head>
     <body>
         <header>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <h2 style="text-align:center;">Nephi Draper<br>
-                351 E Park Creeke Ln D<br>
-                South Salt Lake, Utah 84115<br>
-                (435) 819-0240<br>
-                nephidraper@gmail.com</h2>
+            <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+1 435 819 0240</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>nephidraper@gmail.com</h2>
+            <h2>nephi.dhshowroom@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>351 E Park Creeke Ln D<br>
+                South Salt Lake, Utah 84115
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+            
                 <hr/>
             </header>    
             <nav>
@@ -23,6 +52,83 @@
             </nav>
 
         <h1>Contact Form</h1>
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom01">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom02">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">City</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom04">State</label>
+              <select class="custom-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom05">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+        
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
         <form class=list action="http://form-test.slccwebdev.com/form-success.php"
         method="get">
         
@@ -84,5 +190,8 @@
               
               
         </form>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     </body>
 </html>
