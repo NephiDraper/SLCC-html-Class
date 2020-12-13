@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <Title>Nephi's Resume</Title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <!-- Hero Section -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+<body>
+      <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>N</span>ephi <span>D</span>raper</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+       <!-- Hero Section -->
         <section id="hero">
-            <div class="hero container">
+            <div class="hero container">             
                 <div>
                     <h1>Hello, <span></span></h1>
                     <h1>My Name Is <span></span></h1>
-                    <h1>Nephi Draper <span></span></h1>
-                    <a href="./index.html" class="cta">Home</a>
-                    <a href="./portfolio.html" class="cta">Portfolio</a>
-                    <a href="./education.html" class="cta">Education</a>
-                    <a href="./about.html" class="cta">About</a>
-                    <a href="./contactme.html" class="cta">Contact Me</a>
+                    <h1>Nephi<span></span></h1>                    
+                    <a href="#projects" type="button" class="cta">Portfolio</a>
                 </div>
             </div>
         </section>
@@ -150,7 +169,11 @@
         <p>As an experienced and accomplished Business Owner, Restaurant Manager, and Employee with over
             ten years of experience, I am looking to leverage my extensive background, education, skills and past
             experiences in a way that is mutually beneficial to both myself and my employer and allow for future
-            growth and advancement within the Company.</p>
+            growth and advancement within the Company.</p>        
+        <a href="education.html" class="cta">Education</a>
+        <a href="" class="cta">Certificates</a>
+        <a href="" class="cta">Professional Experience</a>
+        <a href="references.html" class="cta">References</a>
         <a href="" class="cta">Download Resume</a>
       </div>
     </div>
@@ -166,26 +189,25 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
           <div class="contact-info">
             <h1>Phone</h1>
-            <h2>+1 435 819 0240</h2>
+            <h2>(435) 819-0240</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>nephidraper@gmail.com</h2>
-            <h2>nephi.dhshowroom@gmail.com</h2>
+            <h2>nephidraper@gmail.com</h2>            
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
-          <div class="contact-info">
+          <div class="contact-info">            
             <h1>Address</h1>
             <h2>351 E Park Creeke Ln D<br>
                 South Salt Lake, Utah 84115
             </h2>
           </div>
-        </div>
+        </div>               
       </div>
     </div>
   </section>
@@ -215,7 +237,7 @@
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
-  <script src="lesson.js"></script>
+  <script src="lesson1&2.js"></script>
 </body>
 </html>
         <Section>
@@ -273,7 +295,7 @@
         </Section>
         
         <Section>
-            <h1>References and Testimonials</h1>
+            <h1>References and Testimonials</h1>            
             <table class="list">
                 <caption>Testimonials</caption>
                 <tr>
@@ -295,11 +317,22 @@
                     <td>Charley</td>
                     <td>Nephi is great</td>
                     <td>555-555-5555</td>
-                </tr>
+                </tr>                
             </table>
             <p></p>
         </Section>
 
         <footer></footer>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>

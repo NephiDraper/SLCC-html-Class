@@ -488,6 +488,13 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
+body{
+	background-image: url(image/back.jpg);
+	background-size:cover;
+}
+hr{
+	background: white;	
+}
 /*End contact Section */
 
 /* Footer */
