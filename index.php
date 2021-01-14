@@ -170,11 +170,11 @@
             ten years of experience, I am looking to leverage my extensive background, education, skills and past
             experiences in a way that is mutually beneficial to both myself and my employer and allow for future
             growth and advancement within the Company.</p>        
-        <a href="education.html" class="cta">Education</a>
+        <a href="education.php" class="cta">Education</a>
         <a href="" class="cta">Certificates</a>
-        <a href="experience.html" class="cta">Professional Experience</a>
-        <a href="competencies.html" class="cta">Core Competencies</a>
-        <a href="references.html" class="cta">References</a>
+        <a href="experience.php" class="cta">Professional Experience</a>
+        <a href="competencies.php" class="cta">Core Competencies</a>
+        <a href="references.php" class="cta">References</a>
         <a href="" class="cta">Download Resume</a>
       </div>
     </div>

@@ -37,11 +37,11 @@
                 <hr/>
             </header> 
             <nav>
-            <a href="./index.html">Home </a> /
-            <a href="./portfolio.html">Portfolio </a> /
-            <a href="./about.html">About </a> /
-            <a href="./education.html">Education </a> /
-            <a href="./contactme.html">Contact Me </a> /
+            <a href="./index.php">Home </a> /
+            <a href="./portfolio.php">Portfolio </a> /
+            <a href="./about.php">About </a> /
+            <a href="./education.php">Education </a> /
+            <a href="./contactme.php">Contact Me </a> /
             </nav>
         This will be my About Page
         <!-- Latest compiled and minified CSS -->
