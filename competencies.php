@@ -28,18 +28,23 @@
     </div>
   </section>
   <!-- End Header -->
-  <Section>
-    <h1>Core Competencies</h1>
-    <p>I have developed many skills including but not limited to the following: Making decisions and solving
-        problems, Communicating with supervisors, peers, or subordinates, Getting information needed to
-        do the job, Communicating with people outside the organization, Guiding, directing, and motivating
-        others, Developing and building teams, Establishing and maintaining relationships, Developing goals
-        and strategies. Monitoring and controlling resources. Analyze data and information, Judging the value
-        of objects, services, or people, Resolving conflicts and negotiating with others, Evaluating information
-        against standards, Identify objects, actions, and events, Organizing, planning, and prioritizing work.
-        Explaining the meaning of information to others, Updating and using job-related knowledge,
-        Processing information, Coordinating the work and activities of others, and Coaching others.</p>
-</Section>
+
+  <!-- Compentencies Section -->
+  <section id="competencies">
+    <div class="competencies container">
+      <div>
+        <h1>Core Competencies</h1>
+        <?php
+          $competencies = array("Supervising Others", "Conflict Resolution", "Emotional Intelligence", "Communication Skills", "Manage Performance", "Interviewing Skills", "Team Building", "Delegation", "Change Agent", "Coaching", "Problem Solving", "Motivating Others");
+          $arrlength = count($competencies);
+          for($x = 0; $x < $arrlength; $x++) {
+          echo $competencies[$x];
+          echo "<br>";
+          }
+        ?>
+      </div>
+    </div>
+  </section>
 <script src="./app.js"></script>
 </body>
 </html>
