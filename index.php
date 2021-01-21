@@ -171,11 +171,12 @@
             experiences in a way that is mutually beneficial to both myself and my employer and allow for future
             growth and advancement within the Company.</p>        
         <a href="education.php" class="cta">Education</a>
-        <a href="" class="cta">Certificates</a>
+        <a href="" class="cta">Download Resume</a>
+        <a href="contactme.php" class="cta">Contact Form</a>
         <a href="experience.php" class="cta">Professional Experience</a>
         <a href="competencies.php" class="cta">Core Competencies</a>
         <a href="references.php" class="cta">References</a>
-        <a href="" class="cta">Download Resume</a>
+        
       </div>
     </div>
   </section>
