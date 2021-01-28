@@ -33,8 +33,8 @@
     <div class="contactform container">
       <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+$nameErr = $emailErr = $phoneErr = $genderErr = $websiteErr = "";
+$name = $email = $phone = $gender = $comment = $website = "";
 $to = $message = $headers = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -57,7 +57,16 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $emailErr = "Invalid email format";
 }
 }
- 
+if (empty($_POSt["phone"])) {
+$phoneErr = "Phone is required";
+} else {
+$phone = test_input($_POST["phone"]);
+// check if phone is valad
+if(preg_match("/^[0-9]{3}-[0-9]{4}-[0-9]{4}$/", $phone)) {
+  // $phone is valid
+$phoneErr = "Invalid phone format";
+}
+}
 if (empty($_POST["website"])) {
 $website = "";
 } else {
@@ -98,6 +107,9 @@ Name: <input type="text" name="name" value="<?php echo $name;?>">
 E-mail: <input type="text" name="email" value="<?php echo $email;?>">
 <span class="error">* <?php echo $emailErr;?></span>
 <br><br>
+Phone: <input type="text" name="phone" value="<?php echo $phone;?>">
+<span class="error">* <?php echo $phoneErr;?></span>
+<br><br>
 Website: <input type="text" name="website" value="<?php echo $website;?>">
 <span class="error"><?php echo $websiteErr;?></span>
 <br><br>
@@ -120,6 +132,8 @@ echo "<h2>Your Input:</h2>";
 echo $name;
 echo "<br>";
 echo $email;
+echo "<br>";
+echo $phone;
 echo "<br>";
 echo $website;
 echo "<br>";
