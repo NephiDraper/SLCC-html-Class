@@ -142,15 +142,15 @@ echo "<br>";
 echo $gender;
 echo "<br>";
 if (isset($_POST["submit"])){
-$to = "$email";
+$to = "nephidraper@gmail.com";
 $headers = "From: $email \r\n";
 $headers .= "Reply-To: $email \r\n";
 $headers .= "Cc: $email \r\n";
-$headers .= "Bcc: someoneelse@domain.com \r\n";
+$headers .= "Bcc: nephidraper@gmail.com \r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 $email_body = "You have received a new message from the $name.\n"."They are a $gender.\n"."Their website is $website.\n"."They comment:\n $comment.";
 //mail(param1,param2,param3,param4...)
-mail($to, " Website Request ", $email_body, $headers);
+mail($to, "Website Request", $email_body, $headers);
 echo "Thank you for contacting us. We will be in touch with you very soon.";
 }
 ?>
