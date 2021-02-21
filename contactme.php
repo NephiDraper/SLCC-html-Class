@@ -31,10 +31,11 @@
   <!-- Contact Form Section -->    
   <section id="contactform">
     <div class="contactform container">
-      <?php
+    <h1 class="section-title">Contact Form</h1>
+    <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $phoneErr = $genderErr = $websiteErr = "";
-$name = $email = $phone = $gender = $comment = $website = "";
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
 $to = $message = $headers = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -57,16 +58,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $emailErr = "Invalid email format";
 }
 }
-if (empty($_POSt["phone"])) {
-$phoneErr = "Phone is required";
-} else {
-$phone = test_input($_POST["phone"]);
-// check if phone is valad
-if(preg_match("/^[0-9]{3}-[0-9]{4}-[0-9]{4}$/", $phone)) {
-  // $phone is valid
-$phoneErr = "Invalid phone format";
-}
-}
+ 
 if (empty($_POST["website"])) {
 $website = "";
 } else {
@@ -98,22 +90,19 @@ return$data;
 }
 ?>
 
-<h2>PHP Form Validation Example</h2>
+<h2>Please send your request here.</h2>
 <p><span class="error">* required field</span></p>
-<form method="post"action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-Name: <input type="text" name="name" value="<?php echo $name;?>">
-<span class="error">* <?php echo $nameErr;?></span>
-<br><br>
-E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-<span class="error">* <?php echo $emailErr;?></span>
-<br><br>
-Phone: <input type="text" name="phone" value="<?php echo $phone;?>">
-<span class="error">* <?php echo $phoneErr;?></span>
-<br><br>
-Website: <input type="text" name="website" value="<?php echo $website;?>">
-<span class="error"><?php echo $websiteErr;?></span>
-<br><br>
-Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Website: <input type="text" name="website" value="<?php echo $website;?>">
+  <span class="error"><?php echo $websiteErr;?></span>
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
 <br><br>
 Gender:
 <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
@@ -133,27 +122,28 @@ echo $name;
 echo "<br>";
 echo $email;
 echo "<br>";
-echo $phone;
-echo "<br>";
 echo $website;
 echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
 echo "<br>";
+?>
+<?php
 if (isset($_POST["submit"])){
-$to = "nephidraper@gmail.com";
+$to = " nephidraper@gmail.com ";
 $headers = "From: $email \r\n";
-$headers .= "Reply-To: $email \r\n";
-$headers .= "Cc: $email \r\n";
-$headers .= "Bcc: nephidraper@gmail.com \r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
-$email_body = "You have received a new message from the $name.\n"."They are a $gender.\n"."Their website is $website.\n"."They comment:\n $comment.";
+$headers = "Reply-To: $email \r\n";
+$headers = "Cc: someone@domain.com \r\n";
+$headers = "Bcc: someoneelse@domain.com \r\n";
+$headers = "X-Mailer: PHP/" . phpversion();
+$email_body = "You have received a new message from $name.\n"."They are a $gender.\n"."Their website is $website.\n"."They comment:\n $comment.";
 //mail(param1,param2,param3,param4...)
-mail($to, "Website Request", $email_body, $headers);
+mail($to, " Website Request ", $email_body, $headers);
 echo "Thank you for contacting us. We will be in touch with you very soon.";
 }
 ?>
+
   </div>
   </section>
   </body>

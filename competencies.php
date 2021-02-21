@@ -33,7 +33,7 @@
   <section id="competencies">
     <div class="competencies container">
       <div>
-        <h1>Core Competencies</h1>
+      <h1 class="section-title">Compentencies</h1>
         <?php
           $competencies = array("Supervising Others", "Conflict Resolution", "Emotional Intelligence", "Communication Skills", "Manage Performance", "Interviewing Skills", "Team Building", "Delegation", "Change Agent", "Coaching", "Problem Solving", "Motivating Others");
           $arrlength = count($competencies);

@@ -29,7 +29,8 @@
     </div>
   </section>
   <!-- End Header -->
-  <Section>
+  <Section id="experience">
+    <div class="experience container">
     <h1>Professional Experience</h1>
     <h3>Designer Hardware Showroom</h3>
     <p>Owner/Operator: Meet with home owners, contractors, and architects to monitor projects and solve
@@ -64,7 +65,8 @@
         food cost, inventory levels, utility usage, and Health Department ratings. Conduct initial interviews
         with potential hires and make recommendations on candidates to move forward in the interview
         process. Responsible for execution of new initiatives including new product and menu rollouts. Write
-        and manage Team Member schedules.</p>            
+        and manage Team Member schedules.</p>
+    </div>          
 </Section>
 <script src="./app.js"></script>
         <!-- Latest compiled and minified CSS -->
